@@ -1,0 +1,250 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.rouge {
+    color:red;
+}
+
+.imageLogo{
+    width: 100%;
+}
+
+.BLURPLE {
+
+}
+
+.grasita {
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.alorslà {
+    font-style: italic;
+    font-family: "Jacquarda Bastarda 9", serif;
+    color: aquamarine;
+    text-align: center;
+    font-size: xx-large;
+    
+}
+
+a{
+    color : greenyellow
+}
+
+a:visited{
+    text-decoration: none;
+    color: darkorange;
+}
+
+a:hover{
+    color:darkred;
+    text-decoration: dotted;
+}
+
+.Header{
+    position: fixed;
+    width:100%;
+    background-color: lightgray;
+    height: 65px;
+}
+
+.SideBar{
+
+    position: fixed;
+    width: 10%;
+    margin: 0px 0px 0px 0px;
+    height: 100%;
+    display:flex;
+}
+
+.BoutonSideBar{
+    height:100%;
+    background-color: rgb(255,153,0);
+    width: 80%
+}
+
+.SideBarGrad{
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to right, rgb(255,153,0), transparent);
+}
+
+.SideBarAndMain{
+    display: flex;
+    width:100%;
+    height:100%;
+    margin: 65px 0px 0px 0px;
+}
+
+.imagepingouins{
+    display:flex;
+}
+
+.ImageLogo{
+    background-color: rgb(255,153,0);
+    width:80%;
+    text-align: center;
+    padding: 3px 0px 0px 3px;
+}
+
+.Logo{
+    text-align: center;
+    height:100%;
+    width: 10%;
+    display:flex;
+}
+
+.LogoT{
+    font-weight:bolder;
+    font-style: normal;
+    font-size: normal;
+}
+
+.LogoGrad{
+    background: linear-gradient(to right, rgb(255,153,0), lightgray);
+    width:20%;
+}
+
+.Main{
+    display: flex;
+    flex-wrap: wrap;
+    position: static;
+    width:100%-65px;
+    height:100%-110px;
+    margin:0px 0px 0px 10%;
+}
+
+.LogoDescription{
+    width: 50%;
+    height: 300px;
+    margin: 30px;
+    background-color: rgb(255,153,0);
+    border: solid;
+    border-radius: 10%;
+    border-width: 10px;
+    border-color: linear-gradient(rgb(255,150,0),black,transparent);
+}
+
+.n1{
+    width:50%;
+    height:200px;
+    margin:10px;
+    text-align: center;
+}
+
+.n2{
+    display:flex;
+    border: 10px solid salmon;
+    width:50%;
+    height: 150px;
+    margin:10px;
+    text-align: center;
+}
+
+.n2-{
+    width: 100/3% ;
+    text-align: center;
+}
+
+.imgping{
+    border: 5px solid red;
+    height: 94%;
+}
+
+.pintest{
+    align-self: center;
+}
+
+.Footer{
+    height:200px;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    align-content: center;
+}
+
+.Blabla{
+    margin:10%;
+    width:60%;
+    align-self: center;
+}
+
+.Copyright{
+    align-self: center;
+    padding:0px 40%
+}
+
+.NoteUtilisateur{
+    width: 30%;
+}
+
+.etoiless{
+    height:40%;
+    align-self: center;
+}
+
+.Carteplaceholder{
+    height: 100%;
+}
+
+.BiblioCartes{
+    align-content: center;
+    margin: 30px;
+    display: grid;
+    grid: auto-flow 250px / repeat(6, 25%);
+}
+
+.BiblioCartes > div{
+    background-color: aqua;
+    width: 150px;
+    height: 200px;
+    border-radius: 10%;
+    border-color: black;
+    border-width: 5;
+    transition: transform 1s;
+    }
+
+
+.BiblioCartes > div:hover{
+    transition: transform(0.3);
+    transform: scale(1.20);
+}
+
+@media screen and(max-width: 1100px) {
+    
+    .BiblioCartes{
+        align-content: center;
+        margin: 30px;
+        display: grid;
+        grid: auto-flow 200px / repeat(4, 26%);
+    }
+
+    .Header{
+        height:100px;
+    }
+}
+
+@media screen and(max-width: 800px) {
+    .BiblioCartes{
+        align-content: center;
+        margin: 30px;
+        display: grid;
+        grid: auto-flow 200px / repeat(3, 26%);
+    }
+
+    .Header{
+        height:150px;
+    }
+}
